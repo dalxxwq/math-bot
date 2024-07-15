@@ -1,2 +1,2 @@
-# Requirements for running the bot
+Requirements for running the bot
 In order to run the bot, you need to install the libraries, namely the telebot and pickle libraries
