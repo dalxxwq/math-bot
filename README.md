@@ -1,28 +1,40 @@
-# math-bot
-This is a math bot that will help you learn math. To enable it, you need: 
-1) Get your API_TOKEN in botFather in Telegram in order to get your API-TOKEN you need
-1.1)Press Start or Запустить
+# Math Quiz Telegram Bot
 
-![example]([https://github.com/{username}/{repository}/raw/{branch}/{path}/image.png](https://github.com/dalxxwq/math-bot/blob/main/%D0%97%D0%BD%D1%96%D0%BC%D0%BE%D0%BA%20%D0%B5%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-07-15%20112832.png))
+> Project is a Telegram bot for conducting math quizzes with various difficulty levels. The bot is built using the `telebot` library, saves data using the `pickle` library and work with images using the `pillow`.
 
-1.2)click /newbot in the menu that appears
+## Installation
 
-![example]([https://github.com/dalxxwq/math-bot/blob/main/%D0%97%D0%BD%D1%96%D0%BC%D0%BE%D0%BA%20%D0%B5%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-07-15%20135447.png)
+1. Clone the repository or download the project files.
+2. Install the required dependencies:
 
-1.3)Write what you want to name your bot
-
-![example]([https://github.com/dalxxwq/math-bot/blob/main/%D0%97%D0%BD%D1%96%D0%BC%D0%BE%D0%BA%20%D0%B5%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-07-15%20140231.png)
-
-1.4)Now you need to write a username. By this name you can find your bot. We also enter it in the field in which we write messages. The most important thing is that it ends in bot
-
-![example]([https://github.com/dalxxwq/math-bot/blob/main/%D0%97%D0%BD%D1%96%D0%BC%D0%BE%D0%BA%20%D0%B5%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-07-15%20140612.png)
-
-1.5)Now just take and copy your API_TOKEN
-
-![example]([https://github.com/dalxxwq/math-bot/blob/main/%D0%97%D0%BD%D1%96%D0%BC%D0%BE%D0%BA%20%D0%B5%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-07-15%20141057.png)
-
-2)Paste your API_TOKEN in the database.py file
-
-![Here]([https://github.com/dalxxwq/math-bot/blob/main/%D0%97%D0%BD%D1%96%D0%BC%D0%BE%D0%BA%20%D0%B5%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-07-15%20141525.png)
-
-3) Run main.py and train with me
+   ```bash
+   pip install pyTelegramBotAPI
+   pip install pillow
+   ```
+3. Create a database.py file and add your API token:
+   ```bash
+   # database.py
+   API_TOKEN = 'YOUR_API_TOKEN'
+   ```
+## Usage
+1. Run the bot
+   ```bash
+    python bot.py
+   ```
+2. Start a conversation with the bot on Telegram by searching for the bot's username and sending the /start command.
+## Features
+  - The bot provides math equations for users to solve.
+  - Users can take a test with different levels of difficulty.
+  - The bot saves users' progress and levels using the pickle library.
+## File Structure
+  - `bot.py`: The main bot script.
+  - `database.py`: Contains the API token.
+  - `pract.py`: Contains the function create_equation to generate math equations.
+  - `data.pkl`: File used to save user progress and other data.
+## Example
+When the bot is started, it sends a welcome message and prompts the user to take a test:
+```bash
+Hello [username], I am created to help you learn math. I will give you examples and equations, and you need to just write the answers to these examples or equations. Let's immediately proceed to the test. You have 10 equation, the more levels you pass, the more you can go through. Good luck!
+```
+## Contributing
+Feel free to submit issues, fork the repository, and send pull requests. For major changes, please open an issue first to discuss what you would like to change.
