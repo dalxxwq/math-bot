@@ -2,8 +2,7 @@ import telebot
 import pickle
 from telebot import types
 from made_pictures import create_equation
-from database import API_TOKEN, correct_level, equation, number_of_equation, current_level, is_test_active, \
-    equations_correct_count
+from database import API_TOKEN, equation
 
 bot = telebot.TeleBot(API_TOKEN)
 
