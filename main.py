@@ -2,7 +2,8 @@ import telebot
 import pickle
 from telebot import types
 from made_pictures import create_equation
-from database import API_TOKEN, equation
+from settings import API_TOKEN
+from equations_data import equation
 
 bot = telebot.TeleBot(API_TOKEN)
 
