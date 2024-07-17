@@ -2,6 +2,8 @@
 
 > Project is a Telegram bot for conducting math quizzes with various difficulty levels. The bot is built using the `telebot` library, saves data using the `pickle` library and work with images using the `pillow`.
 
+[Presentation](https://www.canva.com/design/DAGLGtQSDjM/xXtkUUsDFmrnb84R9xWMyg/edit)
+
 ## Installation
 
 1. Clone the repository or download the project files.
