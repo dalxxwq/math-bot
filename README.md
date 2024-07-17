@@ -7,7 +7,11 @@
 ## Installation
 
 1. Clone the repository or download the project files.
-2. Create a database.py file and add your API token:
+2. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Create a database.py file and add your API token:
    ```bash
    # database.py
    API_TOKEN = 'YOUR_API_TOKEN'
