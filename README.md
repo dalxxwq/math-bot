@@ -13,7 +13,7 @@
    ```
 4. Create a database.py file and add your API token:
    ```bash
-   # database.py
+   # settings.py
    API_TOKEN = 'YOUR_API_TOKEN'
    ```
 ## Usage
@@ -28,9 +28,10 @@
   - The bot saves users' progress and levels using the pickle library.
 ## File Structure
   - `bot.py`: The main bot script.
-  - `database.py`: Contains the API token.
+  - `settings.py`: Contains the API token.
   - `pract.py`: Contains the function create_equation to generate math equations.
-  - `data.pkl`: File used to save user progress and other data.
+  - `data_of_progress.txt`: File used to save user progress and other data.
+  - `equations_data.py`: Contains the equations themselves.
 ## Example
 When the bot is started, it sends a welcome message and prompts the user to take a test:
 ```bash
